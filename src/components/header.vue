@@ -13,7 +13,7 @@
     <div class="uk-navbar-right">
       <div class="uk-navbar-item">
         <button class="uk-button uk-button-default">
-          <span class="uk-margin-right">ВЫЙТИ</span>
+          <span class="uk-margin-small-right">ВЫЙТИ</span>
           <icon :icon="['fas', 'sign-out-alt']" size="1x"></icon>
         </button>
       </div>
