@@ -9,11 +9,14 @@ export default {
     },
     setError: (state, payload) => {
       state.error = payload
+    },
+    clearError: state => {
+      state.error = null
     }
   },
   actions: {},
   getters: {
     getProcessing: state => state.processing,
-    getError: state => state.error 
+    getError: state => state.error
   }
 }
