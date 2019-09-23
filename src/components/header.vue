@@ -1,5 +1,5 @@
 <template>
-  <nav class="uk-navbar-container" uk-navbar>
+  <nav class="uk-navbar-container" uk-navbar uk-sticky>
     <div class="uk-navbar-left">
       <a href="#" class="uk-navbar-item uk-logo uk-margin-right uk-margin-left">
         <icon :icon="['fas', 'comment-dots']" size='2x'></icon>

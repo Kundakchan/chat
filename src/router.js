@@ -30,7 +30,43 @@ export default new Router({
     {
       path: '/chat',
       name: 'chat',
-      component: () => import('@/views/chat')
+      component: () => import('@/views/chat'),
+      children: [
+        {
+          path: '',
+          component: () => import('@/views/profile')
+        },
+        {
+          path: 'profile',
+          name: 'profile',
+          component: () => import('@/views/profile')
+        },
+        {
+          path: 'friends',
+          name: 'friends',
+          component: () => import('@/views/friends')
+        },
+        {
+          path: 'scroll',
+          name: 'scroll',
+          component: () => import('@/views/scroll')
+        },
+        {
+          path: 'comment',
+          name: 'comment',
+          component: () => import('@/views/comment')
+        },
+        {
+          path: 'camera',
+          name: 'camera',
+          component: () => import('@/views/camera')
+        },
+        {
+          path: 'video',
+          name: 'video',
+          component: () => import('@/views/video')
+        }
+      ]
     }
   ]
 })

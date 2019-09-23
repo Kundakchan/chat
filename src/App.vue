@@ -3,7 +3,7 @@
     <header>
       <app-header></app-header>
     </header>
-    <main class="uk-margin-top">
+    <main>
       <router-view/>
     </main>
     <footer></footer>
